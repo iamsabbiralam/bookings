@@ -8,9 +8,9 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 
-	"github.com/iamsabbiralam/bookings/pkg/config"
-	"github.com/iamsabbiralam/bookings/pkg/handlers"
-	"github.com/iamsabbiralam/bookings/pkg/render"
+	"github.com/iamsabbiralam/bookings/internal/config"
+	"github.com/iamsabbiralam/bookings/internal/handlers"
+	"github.com/iamsabbiralam/bookings/internal/render"
 )
 
 const portNumber = ":8080"
