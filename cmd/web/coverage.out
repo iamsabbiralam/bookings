@@ -1,0 +1,11 @@
+mode: set
+github.com/iamsabbiralam/bookings/cmd/web/main.go:24.13,26.16 2 0
+github.com/iamsabbiralam/bookings/cmd/web/main.go:30.2,37.16 4 0
+github.com/iamsabbiralam/bookings/cmd/web/main.go:26.16,28.3 1 0
+github.com/iamsabbiralam/bookings/cmd/web/main.go:37.16,39.3 1 0
+github.com/iamsabbiralam/bookings/cmd/web/main.go:42.18,58.16 10 1
+github.com/iamsabbiralam/bookings/cmd/web/main.go:62.2,68.12 6 1
+github.com/iamsabbiralam/bookings/cmd/web/main.go:58.16,60.3 1 0
+github.com/iamsabbiralam/bookings/cmd/web/middleware.go:10.45,20.2 3 1
+github.com/iamsabbiralam/bookings/cmd/web/middleware.go:23.50,25.2 1 1
+github.com/iamsabbiralam/bookings/cmd/web/route.go:13.49,40.2 18 1
