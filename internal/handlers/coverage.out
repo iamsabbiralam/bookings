@@ -1,0 +1,22 @@
+mode: set
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:29.47,33.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:36.32,38.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:41.67,46.2 3 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:49.68,61.2 5 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:64.74,72.2 4 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:75.78,77.16 2 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:77.16,80.3 2 0
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:82.2,93.19 6 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:93.19,101.3 4 0
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:103.2,104.66 2 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:108.71,110.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:113.69,115.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:118.75,120.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:123.79,127.2 3 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:130.79,137.16 3 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:137.16,139.3 1 0
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:141.2,143.14 3 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:147.70,149.2 1 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:151.81,153.9 2 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:153.9,158.3 4 1
+github.com/iamsabbiralam/bookings/internal/handlers/handlers.go:160.2,165.4 4 0
