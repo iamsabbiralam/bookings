@@ -3,10 +3,11 @@ package handlers
 import (
 	"encoding/gob"
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
+	"os"
 	"path/filepath"
-	"html/template"
 	"time"
 
 	"github.com/alexedwards/scs/v2"
@@ -29,6 +30,10 @@ func getRoutes() http.Handler {
 
 	// change this to true when in production mode
 	app.InProduction = false
+	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
+	app.InfoLog = infoLog
+	errorLog := log.New(os.Stdout, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+	app.ErrorLog = errorLog
 
 	// set up the session
 	session = scs.New()
@@ -68,7 +73,7 @@ func getRoutes() http.Handler {
 	mux.Get("/make-reservation", Repo.Reservation)
 	mux.Post("/make-reservation", Repo.PostReservation)
 	mux.Get("/reservation-summary", Repo.ReservationSummary)
-	
+
 	mux.Get("/contact", Repo.Contact)
 
 	fileServer := http.FileServer(http.Dir("./static/")) // dot is root folder and static is folder name where all static files are stored
@@ -82,8 +87,8 @@ func NoSurf(next http.Handler) http.Handler {
 	CSRFHandler := nosurf.New(next)
 	CSRFHandler.SetBaseCookie(http.Cookie{
 		HttpOnly: true,
-		Path: "/",
-		Secure: app.InProduction,
+		Path:     "/",
+		Secure:   app.InProduction,
 		SameSite: http.SameSiteLaxMode,
 	})
 

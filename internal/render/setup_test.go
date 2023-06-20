@@ -1,11 +1,12 @@
 package render
 
 import (
-	"os"
-	"net/http"
-	"time"
-	"testing"
 	"encoding/gob"
+	"log"
+	"net/http"
+	"os"
+	"testing"
+	"time"
 
 	"github.com/alexedwards/scs/v2"
 
@@ -22,6 +23,10 @@ func TestMain(m *testing.M) {
 
 	// change this to true when in production mode
 	testApp.InProduction = false
+	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
+	testApp.InfoLog = infoLog
+	errorLog := log.New(os.Stdout, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+	testApp.ErrorLog = errorLog
 
 	// set up the session
 	session = scs.New()
